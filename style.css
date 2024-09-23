@@ -113,7 +113,16 @@ h2 {
     width: 600px;
     height: 3px;
     margin: 0 auto;
-    background-color: #131414;
+    background-color: #141313;  
+    background: linear-gradient(5deg, #4446441f,#131414 , #4446441f);
+}
+.text-about-main .text-1{
+font-weight: 400;
+}
+.text-about-main .text-2{
+    font-size: 1.5em;
+    font-weight: 500;
+    text-align: justify;
 }
 .photo-xp-main{
     width: 35%;
@@ -127,7 +136,7 @@ h2 {
     padding: 5px;
     margin-top: 20px;
     border-radius: 50%;
-    background-image: linear-gradient(45deg, #131414, #4446441f, #131414);
+    background-image: linear-gradient(10deg, #131414, #4446441f, #131414);
 }
 .photo-xp-main span{
     display:inline-block;
