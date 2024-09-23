@@ -1,3 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
 body {
 background-color: rgba(255, 255, 255, 0.801) ;
+}
+
+h1{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color:black
+    
+}
+h2{
+    color:black;
+    font-size: 38px;
+    font-family: "Oswald", sans-serif;
 }
