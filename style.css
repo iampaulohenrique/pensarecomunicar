@@ -6,7 +6,7 @@ body {
 background-image: url(/members/styles/fundosite.jpg);
 background-size: cover;
 background-repeat: no-repeat;*/
-margin: 0;
+    margin: 0;
 }
 
 #one-section {
@@ -24,17 +24,19 @@ margin: 0;
     position: absolute;
     text-align: center;
     /*background-color: black;*/
-    
+
 }
+
 #one-section h1 {
     color: aliceblue;
     font-size: 5.5em;
     margin-top: 80px;
     margin-bottom: 10px;
-    
+
 
 }
-#one-section h2{
+
+#one-section h2 {
     color: aliceblue;
     font-size: 1.5em;
     margin-top: 10px;
@@ -44,7 +46,8 @@ margin: 0;
     width: 55em;
     margin: auto;
 }
-#one-section::before{
+
+#one-section::before {
     content: '';
     position: absolute;
     background-color: black;
@@ -60,7 +63,7 @@ margin: 0;
     width: 80%;
     margin: 0 auto;
     min-height: 300px;
-    overflow: hidden ;
+    overflow: hidden;
 }
 
 h1 {
@@ -92,61 +95,87 @@ h2 {
     margin-top: 20px;
     padding: 50px;
 }
-.titlle-about-main{
+
+.titlle-about-main {
     text-align: center;
 }
-.text-about-main{
+
+.text-about-main {
     width: 65%;
     float: left;
     font-weight: 300;
 
 }
+
 .titlle-about-main h3 {
     font-size: 2.2em;
     padding: 15px 10px 0 10px;
     font-weight: 600;
     font-family: "Playpen Sans", cursive;
 }
+
 .titlle-about-main h3::after {
     content: '';
     display: block;
     width: 600px;
     height: 3px;
     margin: 0 auto;
-    background-color: #141313;  
-    background: linear-gradient(5deg, #4446441f,#131414 , #4446441f);
+    background-color: #141313;
+    background: linear-gradient(5deg, #4446441f, #131414, #4446441f);
 }
-.text-about-main .text-1{
-font-weight: 400;
+
+.text-about-main .text-1 {
+    font-weight: 400;
 }
-.text-about-main .text-2{
+
+.text-about-main .text-2 {
     font-size: 1.5em;
     font-weight: 500;
     text-align: justify;
 }
-.photo-xp-main{
+
+.photo-xp-main {
     width: 35%;
     float: left;
     text-align: center;
-    
+
 
 }
-.photo-xp-main img{
+
+.photo-xp-main img {
     max-width: 70%;
     padding: 5px;
     margin-top: 20px;
     border-radius: 50%;
     background-image: linear-gradient(10deg, #131414, #4446441f, #131414);
 }
-.photo-xp-main span{
-    display:inline-block;
+
+.photo-xp-main span {
+    display: inline-block;
     font-weight: 600;
     margin: 4px;
 }
-.footer {
-    
+#three-section {
+    overflow: hidden;
+    background-color: rgb(248, 247, 245);
 }
 
+#three-section .title-article h3 {
+    text-align: center;
+    font-size: 2.5em;
+    padding: 15px 10px 0 10px;
+    font-weight: 600;
+}
+
+#three-section .title-article::after {
+    content: '';
+    display: block;
+    width: 150px;
+    height: 3px;
+    margin: 0 auto;
+    background-color: #141313;
+    background: linear-gradient(5deg, #4446441f, #131414, #4446441f);
+}
 
 /* paulohenrique */
 
@@ -163,3 +192,13 @@ font-weight: 400;
 /* dan*/
 /* fellipe */
 /* pisabel */
+
+#footer {
+    background-color: #131414;
+    padding: 1px;
+    background: linear-gradient(100deg, #4446441f,#131414, #131414, #4446441f);
+}
+#footer p{
+    color: aliceblue;
+    text-align: center;
+}
