@@ -1,16 +1,156 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@100..800&display=swap');
 
 body {
-background-color: rgba(255, 255, 255, 0.801) ;
+    /*background-color: rgba(255, 255, 255, 0.801) ;
+background-image: url(/members/styles/fundosite.jpg);
+background-size: cover;
+background-repeat: no-repeat;*/
+margin: 0;
 }
 
-h1{
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color:black
+#one-section {
+    height: 500px;
+    background-image: url(/members/styles/fundosite.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+
+    /*background-color: aqua;*/
+}
+
+#one-section .titulo-central {
+    width: 100%;
+    position: absolute;
+    text-align: center;
+    /*background-color: black;*/
     
 }
-h2{
-    color:black;
+#one-section h1 {
+    color: aliceblue;
+    font-size: 5.5em;
+    margin-top: 80px;
+    margin-bottom: 10px;
+    
+
+}
+#one-section h2{
+    color: aliceblue;
+    font-size: 1.5em;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    box-shadow: 10px 10px 30px 12px rgba(0, 0, 0, 0.2);
+    padding: 0px 0px;
+    width: 55em;
+    margin: auto;
+}
+#one-section::before{
+    content: '';
+    position: absolute;
+    background-color: black;
+    top: 0;
+    left: 0;
+    opacity: 0.3;
+    width: 100%;
+    height: 500px;
+
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    min-height: 300px;
+    overflow: hidden ;
+}
+
+h1 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: black
+}
+
+h2 {
+    color: black;
     font-size: 38px;
     font-family: "Oswald", sans-serif;
 }
+
+.text-one {
+    width: 50%;
+    height: 100px;
+    background-position: center;
+    background-color: aqua;
+}
+
+/*.text-two {
+    width: 50%;
+    height: 50px;
+    background-color: aquamarine;
+}
+*/
+
+#two-section {
+    margin-top: 20px;
+    padding: 50px;
+}
+.titlle-about-main{
+    text-align: center;
+}
+.text-about-main{
+    width: 65%;
+    float: left;
+    font-weight: 300;
+
+}
+.titlle-about-main h3 {
+    font-size: 2.2em;
+    padding: 15px 10px 0 10px;
+    font-weight: 600;
+    font-family: "Playpen Sans", cursive;
+}
+.titlle-about-main h3::after {
+    content: '';
+    display: block;
+    width: 600px;
+    height: 3px;
+    margin: 0 auto;
+    background-color: #131414;
+}
+.photo-xp-main{
+    width: 35%;
+    float: left;
+    text-align: center;
+    
+
+}
+.photo-xp-main img{
+    max-width: 70%;
+    padding: 5px;
+    margin-top: 20px;
+    border-radius: 50%;
+    background-image: linear-gradient(45deg, #131414, #4446441f, #131414);
+}
+.photo-xp-main span{
+    display:inline-block;
+    font-weight: 600;
+    margin: 4px;
+}
+.footer {
+    
+}
+
+
+/* paulohenrique */
+
+.name-p {
+    color: black;
+    font-size: 38px;
+    font-family: "Oswald", sans-serif;
+}
+
+.text-ph- {
+    float: right;
+}
+
+/* dan*/
+/* fellipe */
+/* pisabel */
