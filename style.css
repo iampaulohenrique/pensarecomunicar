@@ -8,38 +8,34 @@ background-size: cover;
 background-repeat: no-repeat;*/
     margin: 0;
 }
-
-.menu {
+.menu{
     background-color: rgba(19, 20, 20, 1);
     padding: 5px;
     position: relative;
 }
-
-.menu ul {
+.menu ul{
     text-align: center;
 }
-
 .menu ul li {
     display: inline;
     margin: 0 15px;
 }
-
 .menu li a {
     color: #fff;
     text-decoration: none;
     padding: 10px;
     font-size: 1.2em;
-    transition: background-color 0.3s ease, color 0.3s ease;
+    transition: background-color 0.3s ease, color 0.3s ease; 
 }
 
 .menu ul li a:hover {
     background-color: #000;
-    color: #fff;
+    color: #fff; 
 }
 
 .menu li a.active {
     background-color: #000;
-    color: #fff;
+    color: #fff; 
 }
 
 #one-section {
@@ -188,7 +184,6 @@ h2 {
     font-weight: 600;
     margin: 4px;
 }
-
 #three-section {
     overflow: hidden;
     background-color: rgb(248, 247, 245);
@@ -199,16 +194,16 @@ h2 {
     font-size: 2.5em;
     padding: 15px 10px 0 10px;
     font-weight: 600;
+    font-family: "Oswald", sans-serif;
 }
-
 #three-section .col-3 {
-    width: 300px;
+    width: 30%; /* Ajuste a largura para três colunas */
     margin: 1%;
     float: left;
-    background-color: rgb(223, 220, 214);
-    /*background-color: #000; */
     padding: 0.5%;
-
+    /*background-color: #000;*/
+    background-color: rgba(150, 143, 136, 0.596);
+    
 }
 
 #three-section .bx-img-article {
@@ -216,14 +211,14 @@ h2 {
 }
 
 #three-section .bx-title-article {
-    min-height: 60px;
+    min-height: 30px;
     text-align: center;
+    font-family: "Oswald", sans-serif;
 }
 
 #three-section .bx-text-article {
-    min-height: 200px;
-    /*altura */
-    text-align: center;
+    min-height: 30px; /*altura */
+    text-align: justify;
 }
 
 #three-section .ver-mais {
@@ -242,7 +237,6 @@ h2 {
     background-color: #000;
     background: linear-gradient(5deg, #4446441f, #131414, #4446441f);
 }
-
 
 #three-section .title-article::after {
     content: '';
@@ -276,8 +270,7 @@ h2 {
     background-color: #131414;
     padding: 1px;
 }
-
-#footer p {
+#footer p{
     color: aliceblue;
     text-align: center;
 }
