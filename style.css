@@ -8,6 +8,35 @@ background-size: cover;
 background-repeat: no-repeat;*/
     margin: 0;
 }
+.menu{
+    background-color: rgba(19, 20, 20, 1);
+    padding: 5px;
+    position: relative;
+}
+.menu ul{
+    text-align: center;
+}
+.menu ul li {
+    display: inline;
+    margin: 0 15px;
+}
+.menu li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+    font-size: 1.2em;
+    transition: background-color 0.3s ease, color 0.3s ease; 
+}
+
+.menu ul li a:hover {
+    background-color: #000;
+    color: #fff; 
+}
+
+.menu li a.active {
+    background-color: #000;
+    color: #fff; 
+}
 
 #one-section {
     height: 500px;
