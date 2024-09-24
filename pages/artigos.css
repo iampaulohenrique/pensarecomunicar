@@ -14,7 +14,6 @@ background-repeat: no-repeat;*/
 .menu {
     background-color: rgba(19, 20, 20, 1);
     padding: 5px;
-    position: relative;
 }
 
 .menu ul {
@@ -154,7 +153,7 @@ h2 {
     height: 3px;
     margin: 0 auto;
     background-color: #141313;
-    background: linear-gradient(5deg, #4446441f, #131414, #4446441f);
+    background: #141313;
 }
 
 .text-about-main .text-1 {
