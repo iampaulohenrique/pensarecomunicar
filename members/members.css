@@ -16,100 +16,142 @@ main {
     max-width: 100%;
     height: auto;
 }
-
+/* Estilo para o nome da Isabel */
 .text-isabel {
     font-size: 2em;
     color: black;
 }
 
+/* Estilo para o texto descritivo */
 .text-isabel2 {
     font-size: 1.2em;
     color: #333;
     line-height: 1.5;
 }
 
-/* seção da Isabel */
+/* Seção da Isabel */
 .isabel-section {
     max-width: 800px; /* Limita a largura da seção */
-    margin: 3rem auto; /* Mantém a margem em cima e embaixo */
+    margin: 3rem auto; /* Margem superior e inferior */
     padding: 2rem; /* Espaçamento interno */
     background-color: rgba(255, 255, 255, 0.9); /* Fundo semi-transparente */
     border-radius: 10px; /* Bordas arredondadas */
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3); /* Sombra suave */
 }
 
+/* Layout flex para alinhar imagem e texto */
 .isabel-section .about-content {
-    display: flex; /* Flexbox para alinhamento */
+    display: flex; /* Alinhamento flex */
     align-items: center; /* Centraliza verticalmente */
-    gap: 20px; /* Espaçamento entre a imagem e o texto */
+    gap: 20px; /* Espaçamento entre imagem e texto */
 }
 
+/* Estilo para a imagem */
 .isabel-section .about-content img {
     max-width: 500px; /* Limita o tamanho da imagem */
     border-radius: 10px; /* Bordas arredondadas na imagem */
 }
 
-.isabel-section .text-isabel {
-    font-size: 1.5rem; /* Tamanho da fonte para o nome */
-    margin: 0; /* Remove margens padrão */
+
+/* Estilo para o nome do Marcello */
+.text-marcello {
+    font-size: 2em;
+    color: black;
 }
 
-.isabel-section .text-isabel2 {
-    font-size: 1rem; /* Tamanho da fonte para o texto descritivo */
-    color: #666; /* Cor do texto descritivo */
-    line-height: 1.5; /* Espaçamento entre linhas */
+/* Estilo para o texto descritivo */
+.text-marcello2 {
+    font-size: 1.2em;
+    color: #333;
+    line-height: 1.5;
 }
 
-
-
-.title-about {
-    margin: 20px 0;
+/* Seção do Marcello */
+.marcello-section {
+    max-width: 800px; /* Limita a largura da seção */
+    margin: 3rem auto; /* Margem superior e inferior */
+    padding: 2rem; /* Espaçamento interno */
+    background-color: rgba(255, 255, 255, 0.9); /* Fundo semi-transparente */
+    border-radius: 10px; /* Bordas arredondadas */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3); /* Sombra suave */
 }
 
-.title-about img {
-    max-width: 100%;
-    height: auto;
+/* Layout flex para alinhar imagem e texto */
+.marcello-section .about-content {
+    display: flex; /* Alinhamento flex */
+    align-items: center; /* Centraliza verticalmente */
+    gap: 20px; /* Espaçamento entre imagem e texto */
 }
 
+/* Estilo para a imagem */
+.marcello-section .about-content img {
+    max-width: 500px; /* Limita o tamanho da imagem */
+    border-radius: 10px; /* Bordas arredondadas na imagem */
+}
+
+/* Estilo do botão de voltar */
+.back-button {
+    display: inline-block;
+    margin: 20px;
+    padding: 10px 20px;
+    background-color: #141414;
+    color: #fff;
+    text-align: center;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1.2em;
+    transition: background-color 0.3s ease;
+    font-family: 'Arial', sans-serif;
+}
+/* Estilo para o nome Paulo */
 .text-paulo {
     font-size: 2em;
     color: black;
 }
 
+/* Estilo para o texto descritivo */
 .text-paulo2 {
     font-size: 1.2em;
     color: #333;
     line-height: 1.5;
 }
 
-/* seção do Paulo */
+/* Seção do Paulo */
 .paulo-section {
     max-width: 800px; /* Limita a largura da seção */
-    margin: 3rem auto; /* Mantém a margem em cima e embaixo */
+    margin: 3rem auto; /* Margem superior e inferior */
     padding: 2rem; /* Espaçamento interno */
     background-color: rgba(255, 255, 255, 0.9); /* Fundo semi-transparente */
     border-radius: 10px; /* Bordas arredondadas */
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3); /* Sombra suave */
 }
 
+/* Layout flex para alinhar imagem e texto */
 .paulo-section .about-content {
-    display: flex; /* Flexbox para alinhamento */
+    display: flex; /* Alinhamento flex */
     align-items: center; /* Centraliza verticalmente */
-    gap: 20px; /* Espaçamento entre a imagem e o texto */
+    gap: 20px; /* Espaçamento entre imagem e texto */
 }
 
+/* Estilo para a imagem */
 .paulo-section .about-content img {
     max-width: 500px; /* Limita o tamanho da imagem */
     border-radius: 10px; /* Bordas arredondadas na imagem */
 }
 
+/* Estilo para o título do Paulo */
 .paulo-section .text-paulo {
     font-size: 1.5rem; /* Tamanho da fonte para o nome */
     margin: 0; /* Remove margens padrão */
 }
 
+/* Estilo para o texto descritivo */
 .paulo-section .text-paulo2 {
-    font-size: 1rem; /* Tamanho da fonte para o texto descritivo */
-    color: #666; /* Cor do texto descritivo */
+    font-size: 1rem; /* Tamanho da fonte do texto descritivo */
+    color: #666; /* Cor do texto */
     line-height: 1.5; /* Espaçamento entre linhas */
+}
+
+.back-button:hover {
+    background-color: #000;
 }

@@ -19,64 +19,111 @@
                     <li><a href="/pages/sobre.html">Sobre</a></li>
                 </ul>
             </nav>
-            <h1>Membros do Grupo</h1>
+            <h1>
+                <span class="pt-text">Membros do Grupo</span>
+                <span class="en-text" style="display: none;">Group Members</span>
+            </h1>
         </header>
 
         <main>
-            <p>Saiba um pouco mais sobre os participantes do grupo, sua origem e seus gostos pessoais.</p>
+            <p>
+                <span class="pt-text">Saiba um pouco mais sobre os participantes do grupo, sua origem e seus gostos pessoais.</span>
+                <span class="en-text" style="display: none;">Learn more about the group participants, their background, and their personal interests.</span>
+            </p>
             <div class="members-list">
                 <nav>
-                    <a href="/members/dan.html"><strong>Daniel Meireles</strong></a>:
-                    <span class="en-text" style="display: none;">(Daniel Meireles O. de Souza)</span>
+                    <a href="/members/dan.html">
+                        <strong>
+                            <span class="pt-text">Daniel Meireles</span>
+                            <span class="en-text" style="display: none;">Daniel Meireles</span>
+                        </strong>
+                    </a>
                 </nav>
                 <nav>
-                    <a href="/members/fellipe.html"><strong>Fellipe Gabriel</strong></a>:
-                    <span class="en-text" style="display: none;">(Fellipe Gabriel Silva Santos)</span>
+                    <a href="/members/fellipe.html">
+                        <strong>
+                            <span class="pt-text">Fellipe Gabriel</span>
+                            <span class="en-text" style="display: none;">Fellipe Gabriel</span>
+                        </strong>
+                    </a>
                 </nav>
                 <nav>
-                    <a href="/members/isabel.html"><strong>Isabel Buosi</strong></a>:
-                    <span class="en-text" style="display: none;">(Isabel Oliveira Buosi)</span>
+                    <a href="/members/isabel.html">
+                        <strong>
+                            <span class="pt-text">Isabel Buosi</span>
+                            <span class="en-text" style="display: none;">Isabel Buosi</span>
+                        </strong>
+                    </a>
                 </nav>
                 <nav>
-                    <a href="/members/marcello.html"><strong>Marcello Buosi</strong></a>:
-                    <span class="en-text" style="display: none;"></span>
+                    <a href="/members/marcello.html">
+                        <strong>
+                            <span class="pt-text">Marcello Bellotti</span>
+                            <span class="en-text" style="display: none;">Marcello Bellotti</span>
+                        </strong>
+                    </a>
                 </nav>
                 <nav>
-                    <a href="/members/matheus.html"><strong>Matheus Feitosa</strong></a>:
-                    <span class="en-text" style="display: none;"></span>
+                    <a href="/members/matheus.html">
+                        <strong>
+                            <span class="pt-text">Matheus Feitosa</span>
+                            <span class="en-text" style="display: none;">Matheus Feitosa</span>
+                        </strong>
+                    </a>
                 </nav>
                 <nav>
-                    <a href="/members/pedro.html"><strong>Pedro Henrique</strong></a>:
-                    <span class="en-text" style="display: none;"></span>
+                    <a href="/members/pedro.html">
+                        <strong>
+                            <span class="pt-text">Pedro Henrique</span>
+                            <span class="en-text" style="display: none;">Pedro Henrique</span>
+                        </strong>
+                    </a>
                 </nav>
                 <nav>
-                    <a href="/members/paulohenrique.html"><strong>Paulo Henrique</strong></a>
-                    <span class="en-text" style="display: none;"></span>
+                    <a href="/members/paulohenrique.html">
+                        <strong>
+                            <span class="pt-text">Paulo Henrique</span>
+                            <span class="en-text" style="display: none;">Paulo Henrique</span>
+                        </strong>
+                    </a>
                 </nav>
             </div>
             <!-- Caixa de seleção de idioma -->
             <div class="language-selector" style="position: absolute; right: 20px; top: 20px;">
-                <label for="language">Escolha o idioma:</label>
+                <label for="language">
+                    <span class="pt-text">Escolha o idioma:</span>
+                    <span class="en-text" style="display: none;">Choose the language:</span>
+                </label>
                 <select id="language" onchange="changeLanguage(this.value)">
                     <option value="pt">Português</option>
                     <option value="en">Inglês</option>
-                </select>
-            </div>
-        </main>
-
-        <footer id="footer">
-            <p>©2024 Pensar e Comunicar</p>
+                </seln class="pt-text">©2024 Pensar e Comunicar</span>
+                <span class="en-text" style="display: none;">©2024 Think and Communicate</span>
+            </p>
         </footer>
     </div>
 
     <script>
         function changeLanguage(lang) {
+            const ptTexts = document.querySelectorAll('.pt-text');
             const enTexts = document.querySelectorAll('.en-text');
-            enTexts.forEach(text => {
-                text.style.display = lang === 'en' ? 'inline' : 'none';
-            });
+            
+            if (lang === 'en') {
+                ptTexts.forEach(text => text.style.display = 'none');
+                enTexts.forEach(text => text.style.display = 'inline');
+            } else {
+                ptTexts.forEach(text => text.style.display = 'inline');
+                enTexts.forEach(text => text.style.display = 'none');
+            }
         }
     </script>
 </body>
 
 </html>
+ect>
+            </div>
+        </main>
+
+        <footer id="footer">
+            <p>
+                <spa

@@ -2,12 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@100..800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
 
-
 body {
-    /*background-color: rgba(255, 255, 255, 0.801) ;
-background-image: url(/members/styles/fundosite.jpg);
-background-size: cover;
-background-repeat: no-repeat;*/
     margin: 0;
 }
 
@@ -50,15 +45,14 @@ background-repeat: no-repeat;*/
     background-position: center center;
     background-size: cover;
     background-attachment: fixed;
-
-    /*background-color: aqua;*/
+    position: relative;
 }
 
 #one-section .titulo-central {
     width: 100%;
     position: absolute;
     text-align: center;
-    /*background-color: black;*/
+    z-index: 1;
 }
 
 #one-section h1 {
@@ -66,8 +60,6 @@ background-repeat: no-repeat;*/
     font-size: 5.5em;
     margin-top: 80px;
     margin-bottom: 10px;
-
-
 }
 
 #one-section h2 {
@@ -101,7 +93,7 @@ background-repeat: no-repeat;*/
 
 h1 {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color: black
+    color: black;
 }
 
 h2 {
@@ -109,20 +101,6 @@ h2 {
     font-size: 38px;
     font-family: "Oswald", sans-serif;
 }
-
-.text-one {
-    width: 50%;
-    height: 100px;
-    background-position: center;
-    background-color: aqua;
-}
-
-/*.text-two {
-    width: 50%;
-    height: 50px;
-    background-color: aquamarine;
-}
-*/
 
 #two-section {
     margin-top: 20px;
@@ -137,7 +115,6 @@ h2 {
     width: 65%;
     float: left;
     font-weight: 300;
-
 }
 
 .titlle-about-main h3 {
@@ -171,8 +148,6 @@ h2 {
     width: 35%;
     float: left;
     text-align: center;
-
-
 }
 
 .photo-xp-main img {
@@ -198,19 +173,15 @@ h2 {
     text-align: center;
     font-size: 3em;
     padding: 10px 5px 0 5px;
-    height: 30px;
     font-family: "Oswald", sans-serif;
 }
 
 #three-section .col-3 {
     width: 30%;
-    /* Ajuste a largura para três colunas */
     margin: 1%;
     float: left;
     padding: 0.5%;
-    /*background-color: #000;*/
     background-color: rgba(150, 143, 136, 0.596);
-
 }
 
 #three-section .bx-img-article {
@@ -221,12 +192,10 @@ h2 {
     min-height: 30px;
     text-align: center;
     font-family: "Oswald", sans-serif;
-    
 }
 
 #three-section .bx-text-article {
     min-height: 30px;
-    /*altura */
     text-align: justify;
 }
 
@@ -236,7 +205,6 @@ h2 {
     text-align: right;
     font-family: "Josefin Sans", sans-serif;
 }
-
 
 #three-section .line::after {
     content: '';
@@ -258,8 +226,6 @@ h2 {
     background: linear-gradient(5deg, #4446441f, #131414, #4446441f);
 }
 
-
-
 #footer {
     background-color: #131414;
     padding: 10px;
@@ -269,5 +235,61 @@ h2 {
     color: aliceblue;
     text-align: center;
 }
-/* dan*/
-/* fellipe */
+
+/* Responsividade */
+@media only screen and (max-width: 768px) {
+    #one-section h1 {
+        font-size: 3em;
+    }
+
+    #one-section h2 {
+        font-size: 1em;
+        width: 90%;
+    }
+
+    #two-section {
+        padding: 20px;
+    }
+
+    .text-about-main {
+        width: 100%;
+    }
+
+    .photo-xp-main {
+        width: 100%;
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .photo-xp-main img {
+        max-width: 60%;
+    }
+
+    #three-section .col-3 {
+        width: 45%;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    #one-section h1 {
+        font-size: 2em;
+    }
+
+    #one-section h2 {
+        font-size: 0.8em;
+        width: 100%;
+        padding: 0 10px;
+    }
+
+    #two-section {
+        padding: 10px;
+    }
+
+    .photo-xp-main img {
+        max-width: 80%;
+    }
+
+    #three-section .col-3 {
+        width: 100%;
+    }
+}

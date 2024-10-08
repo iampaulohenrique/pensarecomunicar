@@ -91,6 +91,38 @@ main {
     color: #ecf0f1;
     text-align: center;
 }
+.menu li a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px;
+    font-size: 1.2em;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.menu ul li a:hover {
+    background-color: black;
+    color: #fff;
+}
+
+.menu li a.active {
+    background-color: black;
+    color: #fff;
+}
+
+.language-selector {
+    position: fixed; /* Fixa a posição da caixa */
+    right: 20px; /* Distância da direita */
+    top: 20px; /* Distância do topo */
+    background-color: rgba(255, 255, 255, 0.9); /* Fundo semi-transparente */
+    border-radius: 5px; /* Bordas arredondadas */
+    padding: 10px; /* Espaçamento interno */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra suave */
+    z-index: 100; /* Garante que fique acima de outros elementos */
+}
+
+.language-selector label {
+    margin-right: 10px; /* Espaçamento entre o rótulo e a caixa */
+}
 
 /* Responsividade */
 @media (max-width: 768px) {
