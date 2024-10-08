@@ -28,6 +28,43 @@ main {
     color: #333;
     line-height: 1.5;
 }
+/* Seção do Paulo */
+.daniel-section {
+    max-width: 800px; /* Limita a largura da seção */
+    margin: 3rem auto; /* Margem superior e inferior */
+    padding: 2rem; /* Espaçamento interno */
+    background-color: rgba(255, 255, 255, 0.9); /* Fundo semi-transparente */
+    border-radius: 10px; /* Bordas arredondadas */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3); /* Sombra suave */
+}
+
+/* Layout flex para alinhar imagem e texto */
+.daniel-section .about-content {
+    display: flex; /* Alinhamento flex */
+    align-items: center; /* Centraliza verticalmente */
+    gap: 20px; /* Espaçamento entre imagem e texto */
+}
+
+/* Estilo para a imagem */
+.daniel-section .about-content img {
+    max-width: 500px; /* Limita o tamanho da imagem */
+    border-radius: 10px; /* Bordas arredondadas na imagem */
+}
+
+/* Estilo para o título do Daniel */
+.daniel-section .text-daniel {
+    font-size: 1.5rem; /* Tamanho da fonte para o nome */
+    margin: 0; /* Remove margens padrão */
+}
+
+/* Estilo para o texto descritivo */
+.daniel-section .text-daniel2 {
+    font-size: 1rem; /* Tamanho da fonte do texto descritivo */
+    color: #666; /* Cor do texto */
+    line-height: 1.5; /* Espaçamento entre linhas */
+}
+
+
 
 /* Seção da Isabel */
 .isabel-section {

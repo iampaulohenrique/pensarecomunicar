@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,22 +8,37 @@
     <link rel="stylesheet" href="/style.css" /> <!-- CSS do menu -->
     <link rel="stylesheet" href="/members/members.css" /> <!-- CSS do conteúdo -->
 </head>
+
 <body>
     <nav class="menu">
         <ul>
             <li><a href="index.html">Inicio</a></li>
             <li><a href="/pages/artigos.html">Artigos</a></li>
-            <li><a href="/pages/membros.html">Membros</a></li>
+            <li><a class="active" href="/pages/membros.html">Membros</a></li>
             <li><a href="/pages/sobre.html">Sobre</a></li>
         </ul>
     </nav>
 
     <main class="container">
-        <h1>Daniel Meireles</h1>
-        <p>adicionar</p>
+        <h1>Membros do Grupo</h1>
+
+        <article class="title-about daniel-section">
+            <div class="about-content">
+                <img src="styles/daniel.png" title="Daniel" alt="foto do Daniel" />
+                <div>
+                    <h2 class="text-daniel"><strong>Daniel Meireles</strong></h2>
+                    <p class="text-daniel2">
+                        My name is Dniel, I'm 20 years old I study Computer Science, I got interested in CC very early
+                        because I liked technology and programming, in addition to enjoying watching many related
+                        documentaries.F
+                    </p>
+                </div>
+            </div>
+        </article>
 
         <!-- Botão de Voltar -->
-        <a href="javascript:history.back()" class="back-button">Voltar</a>
+        <a href="/pages/membros.html" class="back-button">Voltar</a>
     </main>
 </body>
+
 </html>
