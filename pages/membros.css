@@ -5,6 +5,7 @@
 html, body {
     height: 100%;
     margin: 0;
+    font-family: 'Arial', sans-serif; /* Fonte padrão para o corpo */
 }
 
 .wrapper {
@@ -13,8 +14,9 @@ html, body {
     min-height: 100vh;
 }
 
+/* Menu */
 .menu {
-    background-color: rgba(19, 20, 20, 1);;
+    background-color: rgba(19, 20, 20, 1);
     padding: 5px;
 }
 
@@ -32,25 +34,19 @@ html, body {
 .menu li a {
     color: #ecf0f1;
     text-decoration: none;
-<<<<<<< HEAD
     font-size: 1.2em;
     padding: 10px 15px;
     border-radius: 5px;
     transition: background-color 0.3s ease, color 0.3s ease;
-    
-=======
-    padding: 10px 15px;
-    border-radius: 5px;
-    transition: background-color 0.3s ease, color 0.3s ease;
->>>>>>> 7cefed64bf6d70396a72604c043a0546e0b11aaf
 }
 
 .menu ul li a:hover,
 .menu li a.active {
-    background-color:rgb(0, 0, 0);
+    background-color: rgb(0, 0, 0);
     color: #ffffff;
 }
 
+/* Títulos */
 h1 {
     text-align: center;
     color: black;
@@ -59,12 +55,14 @@ h1 {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
+/* Main */
 main {
     flex: 1;
     padding: 20px;
     text-align: center;
 }
 
+/* Lista de Membros */
 .members-list {
     display: flex;
     flex-direction: column;
@@ -91,8 +89,9 @@ main {
     border-color: #424446;
 }
 
+/* Rodapé */
 #footer {
-    background-color: #141313;;
+    background-color: #141313;
     padding: 10px;
 }
 
