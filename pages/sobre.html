@@ -12,62 +12,85 @@
     <div class="wrapper">
         <nav class="menu">
             <ul>
-                <li><a href="/index.html">Inicio</a></li>
-                <li><a href="/pages/artigos.html">Artigos</a></li>
-                <li><a href="/pages/membros.html">Membros</a></li>
-                <li><a class="active" href="/pages/sobre.html">Sobre</a></li>
+                <li>
+                    <a href="/index.html">
+                        <span class="pt-text">Inicio</span>
+                        <span class="en-text" style="display: none;">Home</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="/pages/artigos.html">
+                        <span class="pt-text">Artigos</span>
+                        <span class="en-text" style="display: none;">Articles</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="/pages/membros.html">
+                        <span class="pt-text">Membros</span>
+                        <span class="en-text" style="display: none;">Members</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="active" href="/pages/sobre.html">
+                        <span class="pt-text">Sobre</span>
+                        <span class="en-text" style="display: none;">About</span>
+                    </a>
+                </li>
             </ul>
         </nav>
 
         <main>
             <!-- Título com tradução -->
             <h2>
-                <span class="pt">Qual a função de cada um?</span>
-                <span class="en" style="display:none;">What is each person's role?</span>
+                <span class="pt-text">Qual a função de cada um?</span>
+                <span class="en-text" style="display:none;">What is each person's role?</span>
             </h2>
 
             <ul>
                 <li>
                     <a href="/members/dan.html"><strong>Daniel Meireles O. de Souza</strong></a>: 
-                    <span class="pt">Pesquisador e criador de artigos sobre tecnologia.</span>
-                    <span class="en" style="display:none;">Researcher and creator of articles about technology.</span>
+                    <span class="pt-text">Pesquisador e criador de artigos sobre tecnologia.</span>
+                    <span class="en-text" style="display:none;">Researcher and creator of articles about technology.</span>
                 </li>
                 <li>
                     <a href="/members/fellipe.html"><strong>Fellipe Gabriel Silva Santos</strong></a>: 
-                    <span class="pt">Pesquisador e criador de artigos sobre tecnologia.</span>
-                    <span class="en" style="display:none;">Researcher and creator of articles about technology.</span>
+                    <span class="pt-text">Pesquisador e criador de artigos sobre tecnologia.</span>
+                    <span class="en-text" style="display:none;">Researcher and creator of articles about technology.</span>
                 </li>
                 <li>
                     <a href="/members/isabel.html"><strong>Isabel Oliveira Buosi</strong></a>: 
-                    <span class="pt">Líder, pesquisadora e criadora de artigos.</span>
-                    <span class="en" style="display:none;">Leader, researcher, and creator of articles.</span>
+                    <span class="pt-text">Líder, pesquisadora e criadora de artigos.</span>
+                    <span class="en-text" style="display:none;">Leader, researcher, and creator of articles.</span>
                 </li>
                 <li>
                     <a href="/members/marcello.html"><strong>Marcello Bellotti</strong></a>: 
-                    <span class="pt">Pesquisador e criador de artigos sobre tecnologia.</span>
-                    <span class="en" style="display:none;">Researcher and creator of articles about technology.</span>
+                    <span class="pt-text">Pesquisador e criador de artigos sobre tecnologia.</span>
+                    <span class="en-text" style="display:none;">Researcher and creator of articles about technology.</span>
                 </li>
                 <li>
                     <a href="/members/matheus.html"><strong>Matheus Feitosa</strong></a>: 
-                    <span class="pt">Pesquisador e criador de artigos sobre tecnologia.</span>
-                    <span class="en" style="display:none;">Researcher and creator of articles about technology.</span>
+                    <span class="pt-text">Pesquisador e criador de artigos sobre tecnologia.</span>
+                    <span class="en-text" style="display:none;">Researcher and creator of articles about technology.</span>
                 </li>
                 <li>
                     <a href="/members/pedro.html"><strong>Pedro Henrique Oliveira Cola</strong></a>: 
-                    <span class="pt">Pesquisador e criador de artigos sobre tecnologia.</span>
-                    <span class="en" style="display:none;">Researcher and creator of articles about technology.</span>
+                    <span class="pt-text">Pesquisador e criador de artigos sobre tecnologia.</span>
+                    <span class="en-text" style="display:none;">Researcher and creator of articles about technology.</span>
                 </li>
                 <li>
                     <a href="/members/paulohenrique.html"><strong>Paulo Henrique Luiz do Monte</strong></a>: 
-                    <span class="pt">Responsável pelo desenvolvimento do site.</span>
-                    <span class="en" style="display:none;">Responsible for the website development.</span>
+                    <span class="pt-text">Responsável pelo desenvolvimento do site.</span>
+                    <span class="en-text" style="display:none;">Responsible for the website development.</span>
                 </li>
             </ul>
         </main>
 
         <!-- Caixa de seleção de idioma -->
         <div class="language-selector" style="position: absolute; right: 20px; top: 20px;">
-            <label for="language">Escolha o idioma:</label>
+            <label for="language">
+                <span class="pt-text">Escolha o idioma:</span>
+                <span class="en-text" style="display: none;">Choose the language:</span>
+            </label>
             <select id="language" onchange="changeLanguage(this.value)">
                 <option value="pt">Português</option>
                 <option value="en">Inglês</option>
@@ -75,21 +98,24 @@
         </div>
 
         <footer id="footer">
-            <p>©2024 Pensar e Comunicar</p>
+            <p>
+                <span class="pt-text">©2024 Pensar e Comunicar</span>
+                <span class="en-text" style="display: none;">©2024 Think and Communicate</span>
+            </p>
         </footer>
     </div>
 
     <script>
         function changeLanguage(lang) {
-            const ptElements = document.querySelectorAll('.pt');
-            const enElements = document.querySelectorAll('.en');
+            const ptTexts = document.querySelectorAll('.pt-text');
+            const enTexts = document.querySelectorAll('.en-text');
 
-            if (lang === 'pt') {
-                ptElements.forEach(el => el.style.display = 'inline');
-                enElements.forEach(el => el.style.display = 'none');
-            } else if (lang === 'en') {
-                ptElements.forEach(el => el.style.display = 'none');
-                enElements.forEach(el => el.style.display = 'inline');
+            if (lang === 'en') {
+                ptTexts.forEach(text => text.style.display = 'none');
+                enTexts.forEach(text => text.style.display = 'inline');
+            } else {
+                ptTexts.forEach(text => text.style.display = 'inline');
+                enTexts.forEach(text => text.style.display = 'none');
             }
         }
     </script>

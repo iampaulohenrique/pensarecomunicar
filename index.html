@@ -9,126 +9,153 @@
 </head>
 
 <body>
-    <header id="one-section">
-        <div class="titulo-central">
-            <hgroup>
-                <h1>Pensar e Comunicar</h1>
-                <h2> Inglês instrumental e pensamento digital</h2>
-            </hgroup>
-        </div>
-    </header>
+    <div class="wrapper">
+        <header id="one-section">
+            <div class="titulo-central">
+                <hgroup>
+                    <h1>Pensar e Comunicar</h1>
+                    <h2> <span class="pt-text">Inglês instrumental e pensamento digital</span>
+                        <span class="en-text" style="display: none;">Instrumental English and Digital Thinking</span>
+                    </h2>
+                </hgroup>
+            </div>
+        </header>
 
-    <nav class="menu">
-        <ul>
-            <li><a class="active" heref="index.html">Inicio</a></li>
-            <li><a href="/pages/artigos.html">Artigos</a></li>
-            <li><a href="/pages/membros.html">Membros</a></li>
-            <li><a href="/pages/sobre.html">Sobre</a></li>
-        </ul>
-    </nav>
+        <nav class="menu">
+            <ul>
+                <li><a class="active" href="index.html">
+                    <span class="pt-text">Início</span>
+                    <span class="en-text" style="display: none;">Home</span>
+                </a></li>
+                <li><a href="/pages/artigos.html">
+                    <span class="pt-text">Artigos</span>
+                    <span class="en-text" style="display: none;">Articles</span>
+                </a></li>
+                <li><a href="/pages/membros.html">
+                    <span class="pt-text">Membros</span>
+                    <span class="en-text" style="display: none;">Members</span>
+                </a></li>
+                <li><a href="/pages/sobre.html">
+                    <span class="pt-text">Sobre</span>
+                    <span class="en-text" style="display: none;">About</span>
+                </a></li>
+            </ul>
+            <!-- Caixa de seleção de idioma -->
+            <div class="language-selector" style="position: absolute; right: 20px; top: 20px;">
+                <label for="language" style="font-size: 14px;">
+                    <span class="pt-text">Escolha o idioma:</span>
+                    <span class="en-text" style="display: none;">Choose the language:</span>
+                </label>
+                <select id="language" onchange="changeLanguage(this.value)">
+                    <option value="pt">Português</option>
+                    <option value="en">Inglês</option>
+                </select>
+            </div>
+        </nav>
 
+        <main class="container">
+            <section id="two-section">
+                <header class="titlle-about-main">
+                    <h3><span class="pt-text">O que você busca, aqui você encontra.</span>
+                    <span class="en-text" style="display: none;">What you are looking for, you will find here.</span></h3>
+                </header>
 
-    <main class="container">
-        <section id="two-section">
-            <header class="titlle-about-main">
-                <h3>O que você busca, aqui você encontra.</h3>
-            </header>
+                <article class="text-about-main">
+                    <h2 class="text-1">
+                        <strong><span class="pt-text">Inglês instrumental, pensamento digital e muita fé!</span>
+                        <span class="en-text" style="display: none;">Instrumental English, digital thinking, and a lot of faith!</span></strong>
+                    </h2>
+                    <p class="text-2">
+                        <span class="pt-text">O <strong>inglês instrumental</strong> é uma abordagem focada na aprendizagem da língua inglesa como uma ferramenta para acessar informações, comunicar-se em contextos específicos e desenvolver habilidades práticas, especialmente em áreas acadêmicas e profissionais. Essa metodologia enfatiza a utilização do idioma em situações concretas, como ler artigos científicos, participar de conferências ou realizar apresentações.</span>
+                        <span class="en-text" style="display: none;">Instrumental English is an approach focused on learning the English language as a tool to access information, communicate in specific contexts, and develop practical skills, especially in academic and professional areas. This methodology emphasizes the use of the language in concrete situations, such as reading scientific articles, participating in conferences, or making presentations.</span>
+                    </p>
+                </article>
+                <div class="photo-xp-main">
+                    <img src="/members/styles/home.jpg" alt="Imagem ilustrativa">
+                    <span class="desc-xp-main">Imagem ilustrativa</span>
+                </div>
+            </section>
+        </main>
 
-            <article class="text-about-main">
-                <h2 class="text-1">
-                    <strong> Ingles instrumental, pensamento digital e muita fé!</strong>
-                </h2>
-                <p class="text-2">O <strong>inglês instrumental</strong> é uma abordagem focada na aprendizagem da
-                    língua inglesa como
-                    uma ferramenta para acessar informações, comunicar-se em contextos específicos e desenvolver
-                    habilidades práticas, especialmente em áreas acadêmicas e profissionais. Essa metodologia enfatiza a
-                    utilização do idioma em situações concretas, como ler artigos científicos, participar de
-                    conferências ou realizar apresentações.
+        <div class="clear"></div>
 
-                    Por outro lado,<strong>o pensamento digital</strong> refere-se à habilidade de pensar criticamente e
-                    resolver
-                    problemas utilizando as ferramentas digitais disponíveis. Isso inclui a capacidade de navegar na
-                    vasta quantidade de informações online, avaliar a credibilidade de fontes e aplicar conhecimentos de
-                    forma prática em <strong>ambientes virtuais.</strong>
-
-                    Quando combinados, <strong>o inglês instrumental e o pensamento digital</strong> formam uma base
-                    essencial para a
-                    formação de indivíduos capazes de se comunicar eficazmente em um mundo globalizado e cada vez mais
-                    dependente da tecnologia. Essa integração permite que os aprendizes não apenas <strong>dominem a
-                        língua</strong>, mas
-                    também desenvolvam um raciocínio crítico que é vital no ambiente digital atual.
-                </p>
-
-            </article>
-            <div class="photo-xp-main">
-                <img src="/members/styles/home.jpg"> </img>
-                <span class="desc-xp-main">Imagem ilustrativa</span>
-
+        <section id="three-section">
+            <div class="container">
+                <header class="title-article">
+                    <h3><span class="pt-text">Artigos</span>
+                    <span class="en-text" style="display: none;">Articles</span></h3>
+                </header>
             </div>
         </section>
-    </main>
-    <div class="clear"></div>
-    <section id="three-section">
-        <div class="container">
-            <header class="title-article">
-                <h3>
-                    Artigos
+
+        <section id="three-section">
+            <article class="col-3">
+                <img class="bx-img-article" src="members/styles/adicionar1.png" alt="imagem ilustrativa">
+                <h3 class="bx-title-article">
+                    <span class="pt-text">O que é Lorem Ipsum?</span>
+                    <span class="en-text" style="display: none;">What is Lorem Ipsum?</span>
                 </h3>
-            </header>
-        </div>
-    </section>
-    <section id="three-section">
-        <article class="col-3">
-            <img class="bx-img-article" src="members/styles/adicionar1.png" alt="imagem ilustrativa">
-            <h3 class="bx-title-article">O que é Lorem Ipsum?
-            </h3>
-            <div class="line"></div>
-            <p class="bx-text-article">Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de
-                impressos, e vem sendo utilizado desde o século XVI, quando um impressor desconhecido pegou uma bandeja
-                de tipos e os embaralhou para fazer um livro de modelos de tipos. Lorem Ipsum sobreviveu não só a cinco
-                séculos, como também ao salto para a editoração eletrônica, permanecendo essencialmente inalterado. Se
-                popularizou na década de 60, quando a Letraset lançou decalques contendo passagens de Lorem Ipsum, e
-                mais recentemente quando passou a ser integrado a softwares de editoração eletrônica como Aldus
-                PageMaker. </p>
-            <p><a class="ver-mais" href="#">veja mais</a></p>
-        </article>
+                <div class="line"></div>
+                <p class="bx-text-article">
+                    <span class="pt-text">Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI.</span>
+                    <span class="en-text" style="display: none;">Lorem Ipsum is simply a dummy text of the printing and typesetting industry, and has been used since the 16th century.</span>
+                </p>
+                <p><a class="ver-mais" href="#">veja mais</a></p>
+            </article>
 
-        <article class="col-3">
-            <img class="bx-img-article" src="members/styles/adicionar2.png" alt="imagem ilustrativa">
-            <h3 class="bx-title-article">O que é Lorem Ipsum?
-            </h3>
-            <div class="line"></div>
-            <p class="bx-text-article">Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de
-                impressos, e vem sendo utilizado desde o século XVI, quando um impressor desconhecido pegou uma bandeja
-                de tipos e os embaralhou para fazer um livro de modelos de tipos. Lorem Ipsum sobreviveu não só a cinco
-                séculos, como também ao salto para a editoração eletrônica, permanecendo essencialmente inalterado. Se
-                popularizou na década de 60, quando a Letraset lançou decalques contendo passagens de Lorem Ipsum, e
-                mais recentemente quando passou a ser integrado a softwares de editoração eletrônica como Aldus
-                PageMaker.</p>
-            <p><a class="ver-mais" href="#">veja mais</a></p>
-        </article>
+            <article class="col-3">
+                <img class="bx-img-article" src="members/styles/adicionar2.png" alt="imagem ilustrativa">
+                <h3 class="bx-title-article">
+                    <span class="pt-text">O que é Lorem Ipsum?</span>
+                    <span class="en-text" style="display: none;">What is Lorem Ipsum?</span>
+                </h3>
+                <div class="line"></div>
+                <p class="bx-text-article">
+                    <span class="pt-text">Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI.</span>
+                    <span class="en-text" style="display: none;">Lorem Ipsum is simply a dummy text of the printing and typesetting industry, and has been used since the 16th century.</span>
+                </p>
+                <p><a class="ver-mais" href="#">veja mais</a></p>
+            </article>
 
-        <article class="col-3">
-            <img class="bx-img-article" src="members/styles/adicionar3.png" alt="imagem ilustrativa">
-            <h3 class="bx-title-article">O que é Lorem Ipsum?
-            </h3>
-            <div class="line"></div>
-            <p class="bx-text-article">Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de
-                impressos, e vem sendo utilizado desde o século XVI, quando um impressor desconhecido pegou uma bandeja
-                de tipos e os embaralhou para fazer um livro de modelos de tipos. Lorem Ipsum sobreviveu não só a cinco
-                séculos, como também ao salto para a editoração eletrônica, permanecendo essencialmente inalterado. Se
-                popularizou na década de 60, quando a Letraset lançou decalques contendo passagens de Lorem Ipsum, e
-                mais recentemente quando passou a ser integrado a softwares de editoração eletrônica como Aldus
-                PageMaker. </p>
-            <p><a class="ver-mais" href="#">veja mais</a></p>
-        </article>
-    </section>
-    <div class="clear2"></div>
-    <footer id="footer">
-        <p>
-            ©2024 Pensar e Comunicar
-        </p>
-    </footer>
+            <article class="col-3">
+                <img class="bx-img-article" src="members/styles/adicionar3.png" alt="imagem ilustrativa">
+                <h3 class="bx-title-article">
+                    <span class="pt-text">O que é Lorem Ipsum?</span>
+                    <span class="en-text" style="display: none;">What is Lorem Ipsum?</span>
+                </h3>
+                <div class="line"></div>
+                <p class="bx-text-article">
+                    <span class="pt-text">Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI.</span>
+                    <span class="en-text" style="display: none;">Lorem Ipsum is simply a dummy text of the printing and typesetting industry, and has been used since the 16th century.</span>
+                </p>
+                <p><a class="ver-mais" href="#">veja mais</a></p>
+            </article>
+        </section>
+
+        <div class="clear2"></div>
+
+        <footer id="footer">
+            <p>
+                <span class="pt-text">©2024 Pensar e Comunicar</span>
+                <span class="en-text" style="display: none;">©2024 Think and Communicate</span>
+            </p>
+        </footer>
+    </div>
+
+    <script>
+        function changeLanguage(lang) {
+            const ptTexts = document.querySelectorAll('.pt-text');
+            const enTexts = document.querySelectorAll('.en-text');
+
+            if (lang === 'en') {
+                ptTexts.forEach(text => text.style.display = 'none');
+                enTexts.forEach(text => text.style.display = 'inline');
+            } else {
+                ptTexts.forEach(text => text.style.display = 'inline');
+                enTexts.forEach(text => text.style.display = 'none');
+            }
+        }
+    </script>
 </body>
 
 </html>

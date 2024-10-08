@@ -293,3 +293,17 @@ h2 {
         width: 100%;
     }
 }
+.language-selector {
+    position: fixed; /* Fixa a posição da caixa */
+    right: 20px; /* Distância da direita */
+    top: 20px; /* Distância do topo */
+    background-color: rgba(255, 255, 255, 0.9); /* Fundo semi-transparente */
+    border-radius: 5px; /* Bordas arredondadas */
+    padding: 10px; /* Espaçamento interno */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra suave */
+    z-index: 100; /* Garante que fique acima de outros elementos */
+}
+
+.language-selector label {
+    margin-right: 10px; /* Espaçamento entre o rótulo e a caixa */
+}
