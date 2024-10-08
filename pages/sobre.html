@@ -22,20 +22,72 @@
         <main>
             <h2>Membros da Equipe</h2>
             <ul>
-                <li><strong>Daniel Meireles O. de Souza:</strong> Pesquisador e criador de artigos sobre tecnologia.</li>
-                <li><strong>Fellipe Gabriel Silva Santos:</strong> Pesquisador e criador de artigos sobre tecnologia.</li>
-                <li><strong>Isabel Oliveira Buosi:</strong> Líder, pesquisadora e criadora de artigos.</li>
-                <li><strong>Marcello Bellotti:</strong> Pesquisador e criador de artigos sobre tecnologia.</li>
-                <li><strong>Matheus Feitosa:</strong> Pesquisador e criador de artigos sobre tecnologia.</li>
-                <li><strong>Pedro Henrique Oliveira Cola:</strong> Pesquisador e criador de artigos sobre tecnologia.</li>
-                <li><strong>Paulo Henrique Luiz do Monte:</strong> Responsável pelo desenvolvimento do site.</li>
+                <li>
+                    <a href="/members/dan.html"><strong>Daniel Meireles O. de Souza</strong></a>: 
+                    <span class="pt">Pesquisador e criador de artigos sobre tecnologia.</span>
+                    <span class="en" style="display:none;">Researcher and creator of articles about technology.</span>
+                </li>
+                <li>
+                    <a href="/members/fellipe.html"><strong>Fellipe Gabriel Silva Santos</strong></a>: 
+                    <span class="pt">Pesquisador e criador de artigos sobre tecnologia.</span>
+                    <span class="en" style="display:none;">Researcher and creator of articles about technology.</span>
+                </li>
+                <li>
+                    <a href="/members/isabel.html"><strong>Isabel Oliveira Buosi</strong></a>: 
+                    <span class="pt">Líder, pesquisadora e criadora de artigos.</span>
+                    <span class="en" style="display:none;">Leader, researcher, and creator of articles.</span>
+                </li>
+                <li>
+                    <a href="/members/marcello.html"><strong>Marcello Bellotti</strong></a>: 
+                    <span class="pt">Pesquisador e criador de artigos sobre tecnologia.</span>
+                    <span class="en" style="display:none;">Researcher and creator of articles about technology.</span>
+                </li>
+                <li>
+                    <a href="/members/matheus.html"><strong>Matheus Feitosa</strong></a>: 
+                    <span class="pt">Pesquisador e criador de artigos sobre tecnologia.</span>
+                    <span class="en" style="display:none;">Researcher and creator of articles about technology.</span>
+                </li>
+                <li>
+                    <a href="/members/pedro.html"><strong>Pedro Henrique Oliveira Cola</strong></a>: 
+                    <span class="pt">Pesquisador e criador de artigos sobre tecnologia.</span>
+                    <span class="en" style="display:none;">Researcher and creator of articles about technology.</span>
+                </li>
+                <li>
+                    <a href="/members/paulohenrique.html"><strong>Paulo Henrique Luiz do Monte</strong></a>: 
+                    <span class="pt">Responsável pelo desenvolvimento do site.</span>
+                    <span class="en" style="display:none;">Responsible for the website development.</span>
+                </li>
             </ul>
         </main>
+
+        <!-- Caixa de seleção de idioma -->
+        <div class="language-selector" style="position: absolute; right: 20px; top: 20px;">
+            <label for="language">Escolha o idioma:</label>
+            <select id="language" onchange="changeLanguage(this.value)">
+                <option value="pt">Português</option>
+                <option value="en">Inglês</option>
+            </select>
+        </div>
 
         <footer id="footer">
             <p>©2024 Pensar e Comunicar</p>
         </footer>
     </div>
+
+    <script>
+        function changeLanguage(lang) {
+            const ptElements = document.querySelectorAll('.pt');
+            const enElements = document.querySelectorAll('.en');
+
+            if (lang === 'pt') {
+                ptElements.forEach(el => el.style.display = 'inline');
+                enElements.forEach(el => el.style.display = 'none');
+            } else if (lang === 'en') {
+                ptElements.forEach(el => el.style.display = 'none');
+                enElements.forEach(el => el.style.display = 'inline');
+            }
+        }
+    </script>
 </body>
 
 </html>
