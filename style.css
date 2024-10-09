@@ -294,11 +294,58 @@ h2 {
     #three-section .col-3 {
         width: 100%;
     }
+
+    /* Ajustes gerais para o h2 com as classes pt-text e en-text */
+#one-section h2 span {
+    display: inline-block;
+    font-size: 1.5em; /* Tamanho de fonte ajustado para telas maiores */
+    font-family: 'Oswald', sans-serif;
+    color: aliceblue;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 5px;
+    box-shadow: 10px 10px 30px 12px rgba(0, 0, 0, 0.2);
+    width: auto;
+    text-align: center;
+}
+/* Ajustes gerais para o h2 com as classes pt-text e en-text */
+#one-section h2 span {
+    display: inline-block;
+    font-size: 1.5em; /* Tamanho de fonte ajustado para telas maiores */
+    font-family: 'Oswald', sans-serif;
+    color: aliceblue;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 5px;
+    box-shadow: 10px 10px 30px 12px rgba(0, 0, 0, 0.2);
+    width: auto;
+    text-align: center;
+}
+
+/* Responsividade para telas menores */
+@media only screen and (max-width: 768px) {
+    #one-section h2 span {
+        font-size: 1.2em; /* Reduzindo o tamanho da fonte para dispositivos menores */
+        width: 90%;
+        padding: 10px; /* Ajustando o espaçamento interno */
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    #one-section h2 span {
+        font-size: 1em; /* Tamanho menor de fonte para dispositivos muito pequenos */
+        width: 100%;
+        padding: 5px;
+    }
+}
+
+
+
 }
 .language-selector {
-    position: fixed; /* Fixa a posição da caixa */
-    right: 20px; /* Distância da direita */
-    top: 20px; /* Distância do topo */
+    position: flex; /* Fixa a posição da caixa */
+    right: 30px; /* Distância da direita */
+    top: 10px; /* Distância do topo */
     background-color: rgba(255, 255, 255, 0.9); /* Fundo semi-transparente */
     border-radius: 5px; /* Bordas arredondadas */
     padding: 10px; /* Espaçamento interno */
@@ -307,5 +354,5 @@ h2 {
 }
 
 .language-selector label {
-    margin-right: 10px; /* Espaçamento entre o rótulo e a caixa */
+    margin-right: 5px; 
 }
