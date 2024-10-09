@@ -88,12 +88,13 @@ main {
 #footer {
     background-color: #141313;
     padding: 2px;
+    margin-top: 10%;
 }
 
 #footer p {
     color: #ecf0f1;
     text-align: center;
-    font-size: 1.1em;
+    font-size: 1.2em;
 }
 .menu li a {
     color: #ffffff;

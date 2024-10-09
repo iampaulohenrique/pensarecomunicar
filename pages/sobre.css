@@ -66,11 +66,10 @@ main {
 
 #footer {
     background-color: #131414; /* Cor de fundo do rodapé */
-    padding: 10px; /* Espaçamento interno do rodapé */
+    padding: 2px; /* Espaçamento interno do rodapé */
     color: aliceblue; /* Cor do texto do rodapé */
     text-align: center; /* Centraliza o texto do rodapé */
-    font-size: 1.2em; /* Tamanho da fonte do rodapé */
-    margin-top: 20px; /* Espaço acima do rodapé */
+    margin-top: 100px; /* Espaço acima do rodapé */
 }
 
 #footer p {
