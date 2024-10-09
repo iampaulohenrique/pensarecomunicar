@@ -127,19 +127,75 @@ main {
     max-width: 500px;
     border-radius: 10px; 
 }
-
-
-
-.text-paulo {
+/* Estilo para o nome do Pedro */
+.text-matheus {
     font-size: 2em;
     color: black;
 }
 
 
-.text-paulo2 {
+.text-matheus2 {
     font-size: 1.2em;
     color: #333;
     line-height: 1.5;
+}
+
+
+.matheus-section {
+    max-width: 800px;
+    margin: 3rem auto; 
+    padding: 2rem; 
+    background-color: rgba(255, 255, 255, 0.9); 
+    border-radius: 10px; 
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3); 
+}
+
+
+.matheus-section .about-content {
+    display: flex; 
+    align-items: center;
+    gap: 20px;
+}
+
+
+.matheus-section .about-content img {
+    max-width: 500px;
+    border-radius: 10px; 
+}
+/* Estilo para o nome do Pedro */
+.text-pedro {
+    font-size: 2em;
+    color: black;
+}
+
+
+.text-pedro2 {
+    font-size: 1.2em;
+    color: #333;
+    line-height: 1.5;
+}
+
+
+.pedro-section {
+    max-width: 800px;
+    margin: 3rem auto; 
+    padding: 2rem; 
+    background-color: rgba(255, 255, 255, 0.9); 
+    border-radius: 10px; 
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3); 
+}
+
+
+.pedro-section .about-content {
+    display: flex; 
+    align-items: center;
+    gap: 20px;
+}
+
+
+.pedro-section .about-content img {
+    max-width: 500px;
+    border-radius: 10px; 
 }
 
 /* Seção do Paulo */
@@ -175,6 +231,18 @@ main {
 .paulo-section .text-paulo2 {
     font-size: 1rem;
     color: #666;
+    line-height: 1.5;
+}
+
+.text-paulo {
+    font-size: 2em;
+    color: black;
+}
+
+
+.text-paulo2 {
+    font-size: 1.2em;
+    color: #333;
     line-height: 1.5;
 }
 

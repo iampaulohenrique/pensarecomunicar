@@ -1,28 +1,43 @@
 <!DOCTYPE html>
 <html lang="pt">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pedro Henrique</title>
-    <link rel="stylesheet" href="/style.css" /> 
-    <link rel="stylesheet" href="/members/members.css" /> 
+    <title>Marcello Bellotti</title>
+    <link rel="stylesheet" href="/style.css" /> <!-- CSS do menu -->
+    <link rel="stylesheet" href="/members/members.css" /> <!-- CSS do conteúdo -->
 </head>
+
 <body>
     <nav class="menu">
         <ul>
             <li><a href="index.html">Inicio</a></li>
             <li><a href="/pages/artigos.html">Artigos</a></li>
-            <li><a href="/pages/membros.html">Membros</a></li>
+            <li><a class="active" href="/pages/membros.html">Membros</a></li>
             <li><a href="/pages/sobre.html">Sobre</a></li>
         </ul>
     </nav>
 
     <main class="container">
-        <h1>Pedro Henrique</h1>
-        <p>adicionar</p>
+        <h1>Membros do Grupo</h1>
 
-       
-        <a href="javascript:history.back()" class="back-button">Voltar</a>
+        <article class="title-about pedro-section">
+            <div class="about-content">
+                <img src="/members/styles/marcello.png" alt="foto de Pedro Henrique" />
+                <div>
+                    <h2 class="text-pedro"><strong>Pedro Henrique</strong></h2>
+                    <p class="text-pedro2">I'm Pedro Henrique, I'm 21 years old, I'm studying computer science at São
+                        Judas University, I'm currently in the fifth semester.
+                        I work as an intern in IT support, and in my free time I like to play sports and play electronic
+                        games.</p>
+                </div>
+            </div>
+        </article>
+
+        <!-- Botão de Voltar -->
+        <a href="/pages/membros.html" class="back-button">Voltar</a>
     </main>
 </body>
+
 </html>

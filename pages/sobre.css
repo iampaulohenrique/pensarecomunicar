@@ -69,13 +69,14 @@ main {
     padding: 10px; /* Espaçamento interno do rodapé */
     color: aliceblue; /* Cor do texto do rodapé */
     text-align: center; /* Centraliza o texto do rodapé */
-    font-size: 0.9em; /* Tamanho da fonte do rodapé */
+    font-size: 1.2em; /* Tamanho da fonte do rodapé */
     margin-top: 20px; /* Espaço acima do rodapé */
 }
 
 #footer p {
     color: aliceblue;
     text-align: center;
+    font-size: 1.2em;
 }
 main ul li {
     margin: 15px 0; /* Espaçamento entre os itens da lista */

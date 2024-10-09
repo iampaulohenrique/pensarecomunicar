@@ -1,28 +1,44 @@
 <!DOCTYPE html>
 <html lang="pt">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Matheus Feitosa</title>
-    <link rel="stylesheet" href="/style.css" /> <!-- CSS do menu -->
-    <link rel="stylesheet" href="/members/members.css" /> <!-- CSS do conteúdo -->
+    <link rel="stylesheet" href="/style.css" />
+    <link rel="stylesheet" href="/members/members.css" /> 
 </head>
+
 <body>
     <nav class="menu">
         <ul>
             <li><a href="index.html">Inicio</a></li>
             <li><a href="/pages/artigos.html">Artigos</a></li>
-            <li><a href="/pages/membros.html">Membros</a></li>
+            <li><a class="active" href="/pages/membros.html">Membros</a></li>
             <li><a href="/pages/sobre.html">Sobre</a></li>
         </ul>
     </nav>
 
     <main class="container">
-        <h1>Matheus Feitosa</h1>
-        <p>adicionar</p>
+        <h1>Membros do Grupo</h1>
+
+        <article class="title-about matheus-section">
+            <div class="about-content">
+                <img src="/members/styles/matheus.png" alt="foto do matheus" />
+                <div>
+                    <h2 class="text-matheus"><strong>Matheus Feitosa</strong></h2>
+                    <p class="text-matheus2">My name is Matheus Feitosa, I am 23 years old and currently pursuing a degree
+                        in Information Systems at São Judas Tadeu University. I have a strong passion for technology,
+                        which is reflected in my current role at Itaú Bank, where I work in the technology sector. I am
+                        always eager to study and learn new things, constantly looking for opportunities to expand my
+                        knowledge and skills..</p>
+                </div>
+            </div>
+        </article>
 
         <!-- Botão de Voltar -->
-        <a href="javascript:history.back()" class="back-button">Voltar</a>
+        <a href="/pages/membros.html" class="back-button">Voltar</a>
     </main>
 </body>
+
 </html>
