@@ -67,8 +67,7 @@ body {
     font-size: 1.5em;
     margin-top: 10px;
     margin-bottom: 10px;
-    box-shadow: 10px 10px 30px 12px rgba(0, 0, 0, 0.2);
-    padding: 0px 0px;
+    padding: 0;
     width: 55em;
     margin: auto;
 }
@@ -94,13 +93,49 @@ body {
 h1 {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: black;
+    font-size: 1em;
     
 }
 
 h2 {
     color: black;
-    font-size: 38px;
+    font-size: 2em;
     font-family: "Oswald", sans-serif;
+}
+
+h3 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.5em;
+    color: black;
+}
+
+/* Ajustes gerais para o h2 com a classe span */
+#one-section h2 span {
+    display: inline-block;
+    font-family: 'Oswald', sans-serif;
+    color: aliceblue;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 5px;
+    box-shadow: 10px 10px 30px 12px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+/* Responsividade para o h2 span */
+@media only screen and (max-width: 768px) {
+    #one-section h2 span {
+        font-size: 1.5em; /* Tamanho de fonte ajustado para telas maiores */
+        width: 90%;
+        padding: 10px; /* Ajustando o espaçamento interno */
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    #one-section h2 span {
+        font-size: 1em; /* Tamanho menor de fonte para dispositivos muito pequenos */
+        width: 100%;
+        padding: 5px;
+    }
 }
 
 #two-section {
@@ -147,16 +182,16 @@ h2 {
 
 .photo-xp-main {
     width: 35%;
-    float: left;
+    float: right;
     text-align: center;
 }
 
 .photo-xp-main img {
     max-width: 70%;
-    padding: 5px;
+    padding: 2px;
     margin-top: 20px;
-    border-radius: 50%;
-    background-image: linear-gradient(10deg, #131414, #4446441f, #131414);
+    border-radius: 10%;
+    background-image: linear-gradient(2deg, #131414, #4446441f, #131414);
 }
 
 .photo-xp-main span {
@@ -295,56 +330,10 @@ h2 {
     #three-section .col-3 {
         width: 100%;
     }
-
-    /* Ajustes gerais para o h2 com as classes pt-text e en-text */
-#one-section h2 span {
-    display: inline-block;
-    font-size: 1.5em; /* Tamanho de fonte ajustado para telas maiores */
-    font-family: 'Oswald', sans-serif;
-    color: aliceblue;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    padding: 5px;
-    box-shadow: 10px 10px 30px 12px rgba(0, 0, 0, 0.2);
-    width: auto;
-    text-align: center;
-}
-/* Ajustes gerais para o h2 com as classes pt-text e en-text */
-#one-section h2 span {
-    display: inline-block;
-    font-size: 1.5em; /* Tamanho de fonte ajustado para telas maiores */
-    font-family: 'Oswald', sans-serif;
-    color: aliceblue;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    padding: 5px;
-    box-shadow: 10px 10px 30px 12px rgba(0, 0, 0, 0.2);
-    width: auto;
-    text-align: center;
 }
 
-/* Responsividade para telas menores */
-@media only screen and (max-width: 768px) {
-    #one-section h2 span {
-        font-size: 1.2em; /* Reduzindo o tamanho da fonte para dispositivos menores */
-        width: 90%;
-        padding: 10px; /* Ajustando o espaçamento interno */
-    }
-}
-
-@media only screen and (max-width: 480px) {
-    #one-section h2 span {
-        font-size: 1em; /* Tamanho menor de fonte para dispositivos muito pequenos */
-        width: 100%;
-        padding: 5px;
-    }
-}
-
-
-
-}
 .language-selector {
-    position: flex; /* Fixa a posição da caixa */
+    position: fixed; /* Fixa a posição da caixa */
     right: 30px; /* Distância da direita */
     top: 10px; /* Distância do topo */
     background-color: rgba(255, 255, 255, 0.9); /* Fundo semi-transparente */
