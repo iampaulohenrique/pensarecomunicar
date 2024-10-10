@@ -206,6 +206,12 @@ h2 {
     display: block;
     text-align: right;
     font-family: "Josefin Sans", sans-serif;
+    transition: color 0.3s, transform 0.3s;
+}
+
+#three-section .ver-mais:hover {
+    color: #007BFF; /* Muda a cor do texto ao passar o mouse */
+    transform: scale(1.1); /* Aumenta o tamanho do texto ao passar o mouse */
 }
 
 #three-section .line::after {
