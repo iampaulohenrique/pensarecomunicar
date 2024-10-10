@@ -63,14 +63,15 @@ body {
 }
 
 #one-section h2 {
+    display: inline-block;
+    font-family: 'Oswald', sans-serif;
     color: aliceblue;
-    font-size: 1.5em;
     margin-top: 10px;
     margin-bottom: 10px;
+    padding: 5px;
     box-shadow: 10px 10px 30px 12px rgba(0, 0, 0, 0.2);
-    padding: 0px 0px;
-    width: 55em;
-    margin: auto;
+    text-align: center;
+    font-size: 1.5em;
 }
 
 #one-section::before {
