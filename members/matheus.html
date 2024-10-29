@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Matheus Feitosa</title>
     <link rel="stylesheet" href="/style.css" />
-    <link rel="stylesheet" href="/members/members.css" /> 
+    <link rel="stylesheet" href="/members/members.css" />
 </head>
 
 <body>
@@ -19,6 +19,18 @@
         </ul>
     </nav>
 
+    <!-- Caixa de seleção de idioma -->
+    <div class="language-selector" style="position: absolute; right: 20px; top: 20px;">
+        <label for="language" style="font-size: 14px;">
+            <span class="pt-text">Escolha o idioma:</span>
+            <span class="en-text" style="display: none;">Choose the language:</span>
+        </label>
+        <select id="language" onchange="changeLanguage(this.value)">
+            <option value="pt">Português</option>
+            <option value="en">Inglês</option>
+        </select>
+    </div>
+
     <main class="container">
         <h1>Membros do Grupo</h1>
 
@@ -27,7 +39,8 @@
                 <img src="/members/styles/matheus.png" alt="foto do matheus" />
                 <div>
                     <h2 class="text-matheus"><strong>Matheus Feitosa</strong></h2>
-                    <p class="text-matheus2">My name is Matheus Feitosa, I am 23 years old and currently pursuing a degree
+                    <p class="text-matheus2">My name is Matheus Feitosa, I am 23 years old and currently pursuing a
+                        degree
                         in Information Systems at São Judas Tadeu University. I have a strong passion for technology,
                         which is reflected in my current role at Itaú Bank, where I work in the technology sector. I am
                         always eager to study and learn new things, constantly looking for opportunities to expand my
