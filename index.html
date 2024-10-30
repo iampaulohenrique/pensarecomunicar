@@ -188,13 +188,16 @@
         function changeLanguage(lang) {
             const ptTexts = document.querySelectorAll('.pt-text');
             const enTexts = document.querySelectorAll('.en-text');
+            const image = document.querySelector('.photo-xp-main img');
 
             if (lang === 'en') {
                 ptTexts.forEach(text => text.style.display = 'none');
                 enTexts.forEach(text => text.style.display = 'inline');
+                image.src = '/members/styles/logo-en.png'; // Altere para o caminho da imagem em inglês
             } else {
                 ptTexts.forEach(text => text.style.display = 'inline');
                 enTexts.forEach(text => text.style.display = 'none');
+                image.src = "/members/styles/logo-pt.png"; // Imagem em português
             }
         }
     </script>
