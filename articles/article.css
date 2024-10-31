@@ -18,8 +18,10 @@ body {
 
 .menu ul li {
     display: inline;
-    margin: 0 15px;
+    margin: 0 15px; /* Espaçamento horizontal */
+    margin-bottom: 10px; /* Espaçamento vertical (ajuste conforme necessário) */
 }
+
 
 .menu li a {
     color: #fff;
@@ -29,11 +31,7 @@ body {
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-.menu ul li a:hover {
-    background-color: #000;
-    color: #fff;
-}
-
+.menu ul li a:hover,
 .menu li a.active {
     background-color: #000;
     color: #fff;
@@ -65,11 +63,9 @@ body {
 #one-section h2 {
     color: aliceblue;
     font-size: 1.5em;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin: 10px auto 10px;
     padding: 0;
     width: 55em;
-    margin: auto;
 }
 
 #one-section::before {
@@ -94,7 +90,6 @@ h1 {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: black;
     font-size: 1em;
-    
 }
 
 h2 {
@@ -114,8 +109,7 @@ h3 {
     display: inline-block;
     font-family: 'Oswald', sans-serif;
     color: aliceblue;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin: 10px 0;
     padding: 5px;
     box-shadow: 10px 10px 30px 12px rgba(0, 0, 0, 0.2);
     text-align: center;
@@ -125,15 +119,15 @@ h3 {
 /* Responsividade para o h2 span */
 @media only screen and (max-width: 768px) {
     #one-section h2 span {
-        font-size: 1.5em; /* Tamanho de fonte ajustado para telas maiores */
+        font-size: 1.5em;
         width: 90%;
-        padding: 10px; /* Ajustando o espaçamento interno */
+        padding: 10px;
     }
 }
 
 @media only screen and (max-width: 480px) {
     #one-section h2 span {
-        font-size: 1em; /* Tamanho menor de fonte para dispositivos muito pequenos */
+        font-size: 1em;
         width: 100%;
         padding: 5px;
     }
@@ -161,10 +155,11 @@ h3 {
     font-family: "Playpen Sans", cursive;
 }
 
-.titlle-about-main h3::after {
+.titlle-about-main h3::after,
+#three-section .title-article::after {
     content: '';
     display: block;
-    width: 600px;
+    width: 150px;
     height: 3px;
     margin: 0 auto;
     background-color: #141313;
@@ -225,14 +220,14 @@ h3 {
     max-width: 100%;
 }
 
-#three-section .bx-title-article {
+#three-section .bx-title-article,
+#three-section .bx-text-article {
     min-height: 30px;
     text-align: center;
     font-family: "Oswald", sans-serif;
 }
 
 #three-section .bx-text-article {
-    min-height: 30px;
     text-align: justify;
 }
 
@@ -250,16 +245,6 @@ h3 {
     height: 3px;
     margin: -10px auto 10px auto;
     background-color: #000;
-    background: linear-gradient(5deg, #4446441f, #131414, #4446441f);
-}
-
-#three-section .title-article::after {
-    content: '';
-    display: block;
-    width: 150px;
-    height: 3px;
-    margin: 0 auto;
-    background-color: #141313;
     background: linear-gradient(5deg, #4446441f, #131414, #4446441f);
 }
 
