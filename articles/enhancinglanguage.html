@@ -254,8 +254,14 @@
             </section>
         </main>
 
+        <p>
+            <a href="/pages/artigos.html" class="pt-back">Voltar</a>
+            <a href="/pages/artigos.html" class="en-back" style="display: none;">Back</a>
+        </p>
+
         <footer id="footer">
-            <p><span class="pt-text">©2024 Pensar e Comunicar</span>
+            <p>
+                <span class="pt-text">©2024 Pensar e Comunicar</span>
                 <span class="en-text" style="display: none;">©2024 Think and Communicate</span>
             </p>
         </footer>
@@ -265,16 +271,21 @@
         function changeLanguage(lang) {
             const ptTexts = document.querySelectorAll('.pt-text');
             const enTexts = document.querySelectorAll('.en-text');
+            const ptBack = document.querySelector('.pt-back');
+            const enBack = document.querySelector('.en-back');
 
             if (lang === 'en') {
                 ptTexts.forEach(text => text.style.display = 'none');
                 enTexts.forEach(text => text.style.display = 'inline');
+                ptBack.style.display = 'none';
+                enBack.style.display = 'inline';
             } else {
                 ptTexts.forEach(text => text.style.display = 'inline');
                 enTexts.forEach(text => text.style.display = 'none');
+                ptBack.style.display = 'inline';
+                enBack.style.display = 'none';
             }
         }
     </script>
 </body>
-
 </html>
