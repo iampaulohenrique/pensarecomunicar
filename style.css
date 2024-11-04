@@ -72,7 +72,6 @@ body {
     padding: 5px;
     box-shadow: 10px 10px 30px 12px rgba(0, 0, 0, 0.2);
     text-align: center;
-    font-size: 1.5em;
 }
 
 #one-section::before {
@@ -86,6 +85,25 @@ body {
     height: 500px;
 }
 
+#three-section {
+    display: flex;
+    justify-content: center; /* Centraliza o conteúdo horizontalmente */
+    flex-wrap: wrap; /* Permite que as colunas se movam para a próxima linha, se necessário */
+    margin: 0px 0; /* Adiciona espaço superior e inferior */
+}
+
+.container {
+    width: 80%; /* Ou o que você preferir */
+    text-align: center; /* Centraliza o texto dentro da container */
+}
+
+.title-article {
+    margin-bottom: 5px; /* Espaçamento abaixo do título */
+    font-size: 2.5em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
 .container {
     width: 80%;
     margin: 0 auto;
@@ -96,7 +114,6 @@ body {
 h1 {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: black;
-    
 }
 
 h2 {
@@ -158,35 +175,34 @@ h2 {
     padding: 5px;
     margin-top: 20px;
     border-radius: 10%;
-    
-    
 }
 
 .photo-xp-main span {
     display: inline-block;
     font-weight: 600;
     margin: 4px;
-    
 }
 
 #three-section {
-    overflow: hidden;
-    background-color: rgb(248, 247, 245);
-}
-
-#three-section .title-article h3 {
-    text-align: center;
-    font-size: 3em;
-    padding: 10px 5px 0 5px;
-    font-family: "Oswald", sans-serif;
+    display: flex;
+    justify-content: space-between; /* ou 'space-around', dependendo do espaçamento desejado */
+    flex-wrap: wrap; /* permite que as colunas se movam para a próxima linha, se necessário */
 }
 
 #three-section .col-3 {
-    width: 30%;
-    margin: 1%;
-    float: left;
+    flex: 1; /* Faz com que todas as colunas tenham o mesmo tamanho */
+    min-width: 30%; /* Define um tamanho mínimo para as colunas */
+    margin: 1%; /* Espaçamento entre as colunas */
     padding: 0.5%;
     background-color: rgba(150, 143, 136, 0.596);
+    box-sizing: border-box; /* Inclui padding e margin no cálculo da largura total */
+    transition: background-color 0.3s, box-shadow 0.3s, transform 0.3s; /* Animação suave */
+}
+
+#three-section .col-3:hover {
+    background-color: rgba(150, 143, 136, 0.8); /* Cor de fundo mais escura */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Sombra */
+    transform: scale(1.05); /* Aumenta a caixa em 5% */
 }
 
 #three-section .bx-img-article {
@@ -281,6 +297,19 @@ h2 {
     #three-section .col-3 {
         width: 45%;
     }
+
+    #one-section h2 span {
+        display: inline-block;
+        font-size: 1.5em; /* Tamanho de fonte ajustado para telas maiores */
+        font-family: 'Oswald', sans-serif;
+        color: aliceblue;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        padding: 5px;
+        box-shadow: 10px 10px 30px 12px rgba(0, 0, 0, 0.2);
+        width: auto;
+        text-align: center;
+    }
 }
 
 @media only screen and (max-width: 480px) {
@@ -305,54 +334,8 @@ h2 {
     #three-section .col-3 {
         width: 100%;
     }
-
-    /* Ajustes gerais para o h2 com as classes pt-text e en-text */
-#one-section h2 span {
-    display: inline-block;
-    font-size: 1.5em; /* Tamanho de fonte ajustado para telas maiores */
-    font-family: 'Oswald', sans-serif;
-    color: aliceblue;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    padding: 5px;
-    box-shadow: 10px 10px 30px 12px rgba(0, 0, 0, 0.2);
-    width: auto;
-    text-align: center;
-}
-/* Ajustes gerais para o h2 com as classes pt-text e en-text */
-#one-section h2 span {
-    display: inline-block;
-    font-size: 1.5em; /* Tamanho de fonte ajustado para telas maiores */
-    font-family: 'Oswald', sans-serif;
-    color: aliceblue;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    padding: 5px;
-    box-shadow: 10px 10px 30px 12px rgba(0, 0, 0, 0.2);
-    width: auto;
-    text-align: center;
 }
 
-/* Responsividade para telas menores */
-@media only screen and (max-width: 768px) {
-    #one-section h2 span {
-        font-size: 1.2em; /* Reduzindo o tamanho da fonte para dispositivos menores */
-        width: 90%;
-        padding: 10px; /* Ajustando o espaçamento interno */
-    }
-}
-
-@media only screen and (max-width: 480px) {
-    #one-section h2 span {
-        font-size: 1em; /* Tamanho menor de fonte para dispositivos muito pequenos */
-        width: 100%;
-        padding: 5px;
-    }
-}
-
-
-
-}
 .language-selector {
     position: flex; /* Fixa a posição da caixa */
     right: 30px; /* Distância da direita */
