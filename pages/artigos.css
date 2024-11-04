@@ -184,6 +184,7 @@ h2 {
     float: left;
     padding: 0.5%;
     background-color: rgba(150, 143, 136, 0.6);
+    transition: background-color 0.3s, box-shadow 0.3s, transform 0.3s; /* Animação suave */
 }
 
 #three-section .bx-img-article {
@@ -249,4 +250,9 @@ h2 {
 
 .language-selector label {
     margin-right: 10px;
+}
+#three-section .col-3:hover {
+    background-color: rgba(150, 143, 136, 0.8); /* Cor de fundo mais escura */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Sombra */
+    transform: scale(1.05); /* Aumenta a caixa em 5% */
 }
