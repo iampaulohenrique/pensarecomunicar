@@ -10,6 +10,7 @@ body {
     background-color: rgba(19, 20, 20, 1);
     padding: 5px;
     position: relative;
+    font-size: 1.2em;
 }
 
 .menu ul {
