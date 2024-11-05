@@ -1,29 +1,55 @@
 <!DOCTYPE html>
 <html lang="pt">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fellipe Gabriel</title>
-    <link rel="stylesheet" href="/style.css" /> <!-- CSS do menu -->
-    <link rel="stylesheet" href="/members/members.css" /> <!-- CSS do conteúdo -->
+    <link rel="stylesheet" href="/style.css" />
+    <link rel="stylesheet" href="/members/members.css" />
 </head>
+
 <body>
     <nav class="menu">
         <ul>
             <li><a href="index.html">Inicio</a></li>
             <li><a href="/pages/artigos.html">Artigos</a></li>
-            <li><a href="/pages/membros.html">Membros</a></li>
+            <li><a class="active" href="/pages/membros.html">Membros</a></li>
             <li><a href="/pages/sobre.html">Sobre</a></li>
         </ul>
     </nav>
-    
-
+    <!-- Caixa de seleção de idioma -->
+    <div class="language-selector" style="position: absolute; right: 20px; top: 20px;">
+        <label for="language" style="font-size: 14px;">
+            <span class="pt-text">Escolha o idioma:</span>
+            <span class="en-text" style="display: none;">Choose the language:</span>
+        </label>
+        <select id="language" onchange="changeLanguage(this.value)">
+            <option value="pt">Português</option>
+            <option value="en">Inglês</option>
+        </select>
+    </div>
     <main class="container">
-        <h1>Fellipe Gabriel</h1>
-        <p>adicionar</p>
+        <h1>Membros do Grupo</h1>
+
+        <article class="title-about daniel-section">
+            <div class="about-content">
+                <img src="styles/Fellipe.png" title="Fellipe" alt="foto do fellipe" />
+                <div>
+                    <h2 class="text-fellipe"><strong>Fellipe</strong></h2>
+                    <p class="text-fellipe2">
+                        My name is Fellipe Gabriel, I am 16 years old and I am currently studying Software Engineering
+                        at São Judas Tadeu. I have always loved technology and computers.It was an area that I had
+                        contact with since I was little, so the passion only grew. I am a person always looking to learn
+                        more, especially about technology and my area, to increase my knowledge and skills
+                    </p>
+                </div>
+            </div>
+        </article>
 
         <!-- Botão de Voltar -->
-        <a href="javascript:history.back()" class="back-button">Voltar</a>
+        <a href="/pages/membros.html" class="back-button">Voltar</a>
     </main>
 </body>
+
 </html>
